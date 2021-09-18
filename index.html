@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>WE CHAT</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="loginZone">
+        <div class="login-square">
+            <div class="login-container">
+                <h1 class="login-welcome">Welcome!</h1>
+                <input placeholder="User Name" class="input-login" id="userNameInput" />
+                <select id="selectionAvatar">
+                    <option value="1">Avatar 1</option>
+                    <option value="2">Avatar 2</option>
+                    <option value="3">Avatar 3</option>
+                    <option value="4">Avatar 4</option>
+                    <option value="5">Avatar 5</option>
+                    <option value="6">Avatar 6</option>
+                    <option value="7">Avatar 7</option>
+                    <option value="8">Avatar 8</option>
+                </select>
+                <div class="avatar-input-container">
+                    <div class="avatar-container">
+                        <div class="selectedAvatarText">Selected avatar:</div>
+                        <img class="selectedAvatar" id="avatarImage" />
+                    </div>
+                    <button class="button-login" id="login-submit">Access</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="application">
+    <div id="scene"><canvas></canvas></div>
+    <div class="chatZone">
+        <div id="room_name"><h1 id="actual_room_name">CyberCity</h1><button id="room_change">Change Room</button></div>
+        <div class="chat">
+            <div class="chatMessages" id="allMsg"></div>
+        </div>
+        <div class="inputMSG">
+            <div class="inputMSGText">
+                <input placeholder="Write a message" id="textMessage" class="input-chat" />
+                <button id="sendButton" class="button-chat">Send</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="myapp.js"></script>
+</body>
+
+</html>
